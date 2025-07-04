@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Filter, MapPin, CheckCircle, MessageSquare } from 'lucide-react';
 
+// ALTERAÇÃO 1: A interface agora aceita um ARRAY de tipos de conta.
 interface Account {
   id: string;
   type: string;
@@ -12,7 +13,7 @@ interface Account {
   price: number;
   features: string[];
   flag: string;
-  accountType: 'Verificada' | 'Aquecida' | 'Com Gastos';
+  accountType: ('Verificada' | 'Aquecida' | 'Com Gastos')[]; // <--- MUDANÇA AQUI
 }
 
 const Catalog: React.FC = () => {
@@ -20,6 +21,7 @@ const Catalog: React.FC = () => {
   const [selectedStatus, setSelectedStatus] = useState('Todos');
   const [selectedAccountType, setSelectedAccountType] = useState('Todos');
 
+  // ALTERAÇÃO 2: Todos os `accountType` agora são arrays para manter a consistência.
   const accounts: Account[] = [
     {
       id: '1',
@@ -29,7 +31,7 @@ const Catalog: React.FC = () => {
       price: 299,
       features: ['IP Dedicado', 'Verificação Completa', 'Histórico Limpo'],
       flag: '🇺🇸',
-      accountType: 'Verificada'
+      accountType: ['Verificada'] // <--- MUDANÇA AQUI
     },
     {
       id: '2',
@@ -38,19 +40,19 @@ const Catalog: React.FC = () => {
       status: 'Disponível',
       price: 1999,
       features: [
-  'Login + Senha + Cookies + 2FA',
-  'Dupla verificação no Anunciante',
-  'G2 Financeiro verificado',
-  'Operações Comerciais verificadas',
-  'IP Dedicado',
-  'Verificação Completa',
-  'Documentação',
-  'Hospedagem + Domínio incluso',
-  'Campanha ativa e aquecida',
-  'Suporte 24/7'
-],
+        'Login + Senha + Cookies + 2FA',
+        'Dupla verificação no Anunciante',
+        'G2 Financeiro verificado',
+        'Operações Comerciais verificadas',
+        'IP Dedicado',
+        'Verificação Completa',
+        'Documentação',
+        'Hospedagem + Domínio incluso',
+        'Campanha ativa e aquecida',
+        'Suporte 24/7'
+      ],
       flag: '🇧🇷',
-      accountType: ['Aquecida', 'Com Gastos', 'Verificada']
+      accountType: ['Aquecida', 'Com Gastos', 'Verificada'] // Este já era um array
     },
     {
       id: '3',
@@ -60,7 +62,7 @@ const Catalog: React.FC = () => {
       price: 349,
       features: ['IP Dedicado', 'Verificação Completa', 'Suporte 24/7'],
       flag: '🇬🇧',
-      accountType: 'Com Gastos'
+      accountType: ['Com Gastos'] // <--- MUDANÇA AQUI
     },
     {
       id: '4',
@@ -70,7 +72,7 @@ const Catalog: React.FC = () => {
       price: 279,
       features: ['IP Dedicado', 'Verificação Completa', 'Histórico Limpo'],
       flag: '🇨🇦',
-      accountType: 'Verificada'
+      accountType: ['Verificada'] // <--- MUDANÇA AQUI
     },
     {
       id: '5',
@@ -80,7 +82,7 @@ const Catalog: React.FC = () => {
       price: 329,
       features: ['IP Dedicado', 'Verificação Completa', 'Documentação'],
       flag: '🇩🇪',
-      accountType: 'Aquecida'
+      accountType: ['Aquecida'] // <--- MUDANÇA AQUI
     },
     {
       id: '6',
@@ -90,7 +92,7 @@ const Catalog: React.FC = () => {
       price: 369,
       features: ['IP Dedicado', 'Verificação Completa', 'Suporte 24/7'],
       flag: '🇦🇺',
-      accountType: 'Com Gastos'
+      accountType: ['Com Gastos'] // <--- MUDANÇA AQUI
     },
     {
       id: '7',
@@ -100,7 +102,7 @@ const Catalog: React.FC = () => {
       price: 319,
       features: ['IP Dedicado', 'Verificação Completa', 'Histórico Premium'],
       flag: '🇫🇷',
-      accountType: 'Com Gastos'
+      accountType: ['Com Gastos'] // <--- MUDANÇA AQUI
     },
     {
       id: '8',
@@ -110,7 +112,7 @@ const Catalog: React.FC = () => {
       price: 289,
       features: ['IP Dedicado', 'Verificação Completa', 'Aquecimento 30 dias'],
       flag: '🇮🇹',
-      accountType: 'Aquecida'
+      accountType: ['Aquecida'] // <--- MUDANÇA AQUI
     }
   ];
 
@@ -118,10 +120,11 @@ const Catalog: React.FC = () => {
   const statuses = ['Todos', 'Disponível', 'Reservada', 'Vendida'];
   const accountTypes = ['Todos', 'Verificada', 'Aquecida', 'Com Gastos'];
 
+  // ALTERAÇÃO 3: A lógica de filtro agora usa `.includes()` para checar se o tipo selecionado existe no array.
   const filteredAccounts = accounts.filter(account => {
     const countryMatch = selectedCountry === 'Todos' || account.country === selectedCountry;
     const statusMatch = selectedStatus === 'Todos' || account.status === selectedStatus;
-    const accountTypeMatch = selectedAccountType === 'Todos' || account.accountType === selectedAccountType;
+    const accountTypeMatch = selectedAccountType === 'Todos' || account.accountType.includes(selectedAccountType as any); // <--- MUDANÇA AQUI
     return countryMatch && statusMatch && accountTypeMatch;
   });
 
@@ -290,14 +293,18 @@ const Catalog: React.FC = () => {
                   {account.status}
                 </div>
               </div>
-
-              {/* Tipo de Conta */}
+              
+              {/* ALTERAÇÃO 4: Renderiza um badge para CADA tipo de conta e mostra a descrição do PRIMEIRO tipo. */}
               <div className="mb-4">
-                <div className={`inline-flex px-3 py-1 rounded-full text-xs font-medium border ${getAccountTypeColor(account.accountType)} mb-2`}>
-                  {account.accountType}
+                <div className="flex flex-wrap gap-2 mb-2">
+                  {account.accountType.map((type) => (
+                    <div key={type} className={`inline-flex px-3 py-1 rounded-full text-xs font-medium border ${getAccountTypeColor(type)}`}>
+                      {type}
+                    </div>
+                  ))}
                 </div>
                 <p className="text-galaxy-light/60 font-poppins text-xs">
-                  {getAccountTypeDescription(account.accountType)}
+                  {getAccountTypeDescription(account.accountType[0])}
                 </p>
               </div>
 
@@ -314,10 +321,11 @@ const Catalog: React.FC = () => {
                   ))}
                 </div>
               </div>
-
+              
+              {/* ALTERAÇÃO 5: O link do WhatsApp agora junta os tipos com vírgula para não quebrar. */}
               <div className="flex gap-2">
                 <a
-                  href={`https://wa.me/5544999999999?text=Olá! Gostaria de fazer o pedido da conta ${account.type} - ${account.country} (${account.accountType})`}
+                  href={`https://wa.me/5544999999999?text=Olá! Gostaria de fazer o pedido da conta ${account.type} - ${account.country} (${account.accountType.join(', ')})`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`flex-1 text-center py-3 rounded-lg font-poppins text-sm font-medium transition-all duration-300 flex items-center justify-center space-x-2 ${
