@@ -36,10 +36,21 @@ const Catalog: React.FC = () => {
       type: 'Premium BR',
       country: 'Brasil',
       status: 'Disponível',
-      price: 199,
-      features: ['IP Dedicado', 'Verificação Completa', 'Documentação'],
+      price: 1999,
+      features: [
+  'Login + Senha + Cookies + 2FA',
+  'Dupla verificação no Anunciante',
+  'G2 Financeiro verificado',
+  'Operações Comerciais verificadas',
+  'IP Dedicado',
+  'Verificação Completa',
+  'Documentação',
+  'Hospedagem + Domínio incluso',
+  'Campanha ativa e aquecida',
+  'Suporte 24/7'
+],
       flag: '🇧🇷',
-      accountType: 'Aquecida'
+      accountType: ['Aquecida', 'Com Gastos', 'Verificada']
     },
     {
       id: '3',
