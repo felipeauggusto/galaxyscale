@@ -36,18 +36,18 @@ const About: React.FC = () => {
               A Estrutura de Contingência Definitiva
             </h3>
             <p className="text-galaxy-light/80 font-poppins text-lg leading-relaxed">
-              Com anos de experiência no mercado digital, a <span className="galaxy-gradient font-medium">GalaxyScale</span> se 
-              especializou em fornecer contas Google Ads premium para anunciantes que não aceitam limites. 
-              Nossa missão é oferecer a infraestrutura perfeita para que você possa escalar seus negócios 
-              sem preocupações técnicas.
+              A <span className="galaxy-gradient font-medium">GalaxyScale</span> nasceu da
+              experiência de quem vive o tráfego todos os dias. A gente sabe como é frustrante
+              lidar com contas bloqueadas, instabilidade e limitações, por isso criamos a 
+              estrutura ideal pra quem quer escalar de verdade.
             </p>
             <p className="text-galaxy-light/80 font-poppins text-lg leading-relaxed">
               Cada conta é cuidadosamente verificada, configurada com IPs dedicados e entregue com 
               toda a documentação necessária para garantir sua tranquilidade e máxima performance.
             </p>
             <p className="text-galaxy-light/80 font-poppins text-lg leading-relaxed">
-              Nossa equipe técnica especializada está sempre disponível para oferecer suporte 
-              completo, desde a configuração inicial até estratégias avançadas de otimização.
+              Além disso, nossa equipe está sempre por perto. Seja pra configurar sua conta,
+              tirar dúvidas ou te ajudar a otimizar suas campanhas, o suporte é real e funciona 24 horas por dia, 7 dias por semana.
             </p>
           </motion.div>
 
