@@ -9,7 +9,7 @@ const Community: React.FC = () => {
     {
       icon: Users,
       title: 'Networking Exclusivo',
-      description: 'Conecte-se com outros escaladores de sucesso e compartilhe experiências'
+      description: 'Conecte-se com outros anunciantes de sucesso e compartilhe experiências'
     },
     {
       icon: MessageCircle,
@@ -19,7 +19,7 @@ const Community: React.FC = () => {
     {
       icon: Trophy,
       title: 'Cases de Sucesso',
-      description: 'Acompanhe casos reais de escaladores que alcançaram resultados extraordinários'
+      description: 'Acompanhe casos reais de anunciantes que alcançaram resultados extraordinários'
     },
     {
       icon: Star,
@@ -39,8 +39,8 @@ const Community: React.FC = () => {
   ];
 
   const stats = [
-    { number: '500+', label: 'Membros Ativos' },
-    { number: '50M+', label: 'Investidos pelos Membros' },
+    { number: '200+', label: 'Membros Ativos' },
+    { number: '10M+', label: 'Investidos pelos Membros' },
     { number: '95%', label: 'Taxa de Sucesso' },
     { number: '24/7', label: 'Suporte Disponível' }
   ];
@@ -59,7 +59,7 @@ const Community: React.FC = () => {
             Comunidade Elite
           </h2>
           <p className="text-xl sm:text-2xl text-galaxy-light font-poppins font-light max-w-4xl mx-auto">
-            Faça parte da comunidade exclusiva dos escaladores que não aceitam limites
+            Faça parte da comunidade exclusiva dos anunciantes que não aceitam limites
           </p>
         </motion.div>
 
@@ -124,7 +124,7 @@ const Community: React.FC = () => {
             <p className="text-galaxy-light/80 font-poppins text-lg mb-8 leading-relaxed">
               Ao adquirir uma conta <span className="galaxy-gradient font-medium">GalaxyScale</span>, 
               você automaticamente se torna membro da nossa comunidade exclusiva. 
-              Conecte-se com outros escaladores, aprenda estratégias avançadas e acelere seus resultados.
+              Conecte-se com outros anunciantes, aprenda estratégias avançadas e acelere seus resultados.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
             GalaxyScale
           </h1>
           <p className="text-xl sm:text-2xl md:text-3xl text-galaxy-light font-poppins font-light mb-4">
-            A <span className="text-galaxy-cyan font-medium">GalaxyScale</span> é para quem quer escalar... até as galáxias.
+            A <span className="text-galaxy-cyan font-medium">GalaxyScale</span> é para quem quer escalar... ATÉ AS GALÁXIAS!
           </p>
           <p className="text-lg sm:text-xl md:text-2xl text-galaxy-light/80 font-poppins font-light mb-8">
             A estrutura de contingência definitiva para anunciantes que não aceitam limites.

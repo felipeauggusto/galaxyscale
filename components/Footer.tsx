@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
                 Performance, segurança e suporte de outro mundo.
               </p>
               <p className="text-galaxy-light/60 font-poppins text-xs">
-                © 2024 GalaxyScale. Todos os direitos reservados.
+                © 2025 GalaxyScale. Todos os direitos reservados.
               </p>
             </div>
 

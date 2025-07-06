@@ -19,7 +19,7 @@ const About: React.FC = () => {
             Sobre a GalaxyScale
           </h2>
           <p className="text-xl sm:text-2xl text-galaxy-light font-poppins font-light max-w-4xl mx-auto">
-            Somos especialistas em fornecer a infraestrutura perfeita para escaladores que buscam resultados extraordinários
+            Somos especialistas em fornecer a infraestrutura perfeita para anunciantes que buscam resultados extraordinários
           </p>
         </motion.div>
 
@@ -90,7 +90,7 @@ const About: React.FC = () => {
                   <div>
                     <h5 className="font-poppins font-semibold text-galaxy-light">Entrega Rápida</h5>
                     <p className="text-galaxy-light/70 font-poppins text-sm">
-                      Receba suas contas em até 24 horas após o pagamento
+                      Receba suas contas após o pagamento
                     </p>
                   </div>
                 </div>

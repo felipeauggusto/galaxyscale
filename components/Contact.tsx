@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
     },
     {
       question: 'Aceita quais formas de pagamento?',
-      answer: 'Aceitamos PIX, cartão de crédito, débito e transferência bancária.'
+      answer: 'Aceitamos PIX ou transferências via CriptoMoedas'
     }
   ];
 

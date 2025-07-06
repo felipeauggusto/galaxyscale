@@ -15,12 +15,12 @@ const HowItWorks: React.FC = () => {
     {
       icon: CreditCard,
       title: 'Realize o Pagamento',
-      description: 'Pagamento seguro via PIX, cartão ou transferência bancária',
+      description: 'Pagamento seguro via PIX',
       color: 'text-galaxy-cyan'
     },
     {
       icon: Truck,
-      title: 'Receba em 24h',
+      title: 'Receba sua Conta',
       description: 'Entregamos sua conta verificada com toda documentação necessária',
       color: 'text-galaxy-purple'
     },
