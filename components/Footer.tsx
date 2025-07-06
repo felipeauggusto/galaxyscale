@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { Instagram, ArrowUp, MessageSquare } from 'lucide-react';
 
 const Footer: React.FC = () => {
@@ -15,7 +16,9 @@ const Footer: React.FC = () => {
     { name: 'Como Funciona', href: '#how-it-works' },
     { name: 'Benefícios', href: '#benefits' },
     { name: 'Comunidade', href: '#community' },
-    { name: 'Contato', href: '#contact' }
+    { name: 'Contato', href: '#contact' },
+    { name: 'Política de Privacidade', href: '/politica-de-privacidade' },
+    { name: 'Termos de Uso', href: '/termos-de-uso' }
   ];
 
   return (
@@ -44,13 +47,13 @@ const Footer: React.FC = () => {
               </h4>
               <div className="grid grid-cols-2 gap-2">
                 {quickLinks.map((link) => (
-                  <a
+                  <Link
                     key={link.name}
                     href={link.href}
                     className="text-galaxy-light/70 hover:text-galaxy-cyan transition-colors duration-300 font-poppins text-sm"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -82,7 +85,7 @@ const Footer: React.FC = () => {
             <div className="text-galaxy-light/60 font-poppins text-xs mb-4 sm:mb-0">
               Desenvolvido com 💜 pela equipe GalaxyScale
             </div>
-            
+
             {/* Botão voltar ao topo */}
             <button
               onClick={scrollToTop}
