@@ -1,6 +1,6 @@
-import { Header } from "../components/header";
-import { Footer } from "../components/footer";
-import { WhatsAppButton } from "../components/whatsapp-button";
+import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
+// restante do código...
 
 export default function TermosUso() {
   const sections = [
