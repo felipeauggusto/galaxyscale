@@ -15,7 +15,9 @@ const Footer: React.FC = () => {
     { name: 'Como Funciona', href: '#how-it-works' },
     { name: 'Benefícios', href: '#benefits' },
     { name: 'Comunidade', href: '#community' },
-    { name: 'Contato', href: '#contact' }
+    { name: 'Contato', href: '#contact' },
+    { name: 'Política de Privacidade', href: '/politica-de-privacidade' },
+    { name: 'Termos de Uso', href: '/termos-de-uso' }
   ];
 
   return (
