@@ -1,7 +1,7 @@
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { WhatsAppButton } from "@/components/whatsapp-button"
-import { Shield, Database, Share2, Lock, Cookie, UserCheck, RefreshCw, Mail } from "lucide-react"
+import { Header } from "../components/header";
+import { Footer } from "../components/footer";
+import { WhatsAppButton } from "../components/whatsapp-button";
+// restante do código...
 
 export default function PoliticaPrivacidade() {
   const sections = [

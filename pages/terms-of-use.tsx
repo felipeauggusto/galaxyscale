@@ -1,7 +1,6 @@
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { WhatsAppButton } from "@/components/whatsapp-button"
-import { Globe, ShoppingCart, Shield, AlertTriangle, Scale, Copyright, RefreshCw, Mail } from "lucide-react"
+import { Header } from "../components/header";
+import { Footer } from "../components/footer";
+import { WhatsAppButton } from "../components/whatsapp-button";
 
 export default function TermosUso() {
   const sections = [
