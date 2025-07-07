@@ -1,49 +1,49 @@
 export default function TermosUso() {
   const sections = [
     {
-      iconName: "Globe",
+      iconName: "01",
       title: "Uso do Site",
       content:
         "Ao acessar e usar os serviços da GalaxyScale, você concorda em cumprir estes termos. O uso inadequado, tentativas de hack ou violação das regras resultará no banimento imediato da plataforma.",
     },
     {
-      iconName: "01",
+      iconName: "02",
       title: "Compra de Contas",
       content:
         "As contas oferecidas são verificadas e entregues conforme especificado. O prazo de entrega é de até 24 horas. Após a entrega, a responsabilidade pela manutenção da conta é do comprador.",
     },
     {
-      iconName: "02",
+      iconName: "03",
       title: "Garantia",
       content:
         "Oferecemos garantia de 30 dias para contas com problemas técnicos comprovados. A garantia não cobre banimentos por uso inadequado, violação de políticas das plataformas ou alterações não autorizadas.",
     },
     {
-      iconName: "03",
+      iconName: "04",
       title: "Restrições",
       content:
         "É proibido revender nossas contas, usar para atividades ilegais, spam ou qualquer prática que viole os termos das plataformas originais. O descumprimento resulta em perda da garantia.",
     },
     {
-      iconName: "04",
+      iconName: "05",
       title: "Responsabilidades",
       content:
         "A GalaxyScale não se responsabiliza por perdas decorrentes do uso inadequado das contas. O usuário é responsável por seguir as diretrizes das plataformas e manter as contas em conformidade.",
     },
     {
-      iconName: "05",
+      iconName: "06",
       title: "Propriedade Intelectual",
       content:
         "Todo conteúdo do site, incluindo textos, imagens, logos e design são propriedade da GalaxyScale. É proibida a reprodução sem autorização expressa.",
     },
     {
-      iconName: "06",
+      iconName: "07",
       title: "Atualizações dos Termos",
       content:
         "Estes termos podem ser atualizados a qualquer momento. Continuando a usar nossos serviços após as mudanças, você aceita automaticamente os novos termos.",
     },
     {
-      iconName: "07",
+      iconName: "08",
       title: "Contato",
       content:
         "Para dúvidas sobre estes termos, entre em contato através do e-mail legal@galaxyscale.com ou pelo WhatsApp disponível em nosso site.",
@@ -102,7 +102,7 @@ export default function TermosUso() {
                   justifyContent: "center",
                   color: "white",
                   fontWeight: "700",
-                  fontFamily: "'Orbitron', sans-serif",
+                  fontFamily: "'Poppins', sans-serif",
                   fontSize: "1rem",
                   userSelect: "none",
                 }}
@@ -117,7 +117,7 @@ export default function TermosUso() {
                     color: "white",
                     fontSize: "1.5rem",
                     fontWeight: "600",
-                    fontFamily: "'Orbitron', sans-serif",
+                    fontFamily: "'Poppins', sans-serif",
                     marginBottom: "0.75rem",
                   }}
                 >
@@ -134,7 +134,7 @@ export default function TermosUso() {
         {/* Última atualização */}
         <div style={{ textAlign: "center", marginTop: "3rem" }}>
           <p style={{ color: "#94A3B8", fontSize: "0.875rem", fontFamily: "'Poppins', sans-serif" }}>
-            Última atualização: Janeiro de 2024
+            Última atualização: 07/07/2025.
           </p>
         </div>
       </main>

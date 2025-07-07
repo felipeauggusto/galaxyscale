@@ -102,7 +102,7 @@ export default function PoliticaPrivacidade() {
                   justifyContent: "center",
                   color: "white",
                   fontWeight: "700",
-                  fontFamily: "'Orbitron', sans-serif",
+                  fontFamily: "'Poppins', sans-serif",
                   fontSize: "1rem",
                   userSelect: "none",
                 }}
@@ -117,7 +117,7 @@ export default function PoliticaPrivacidade() {
                     color: "white",
                     fontSize: "1.5rem",
                     fontWeight: "600",
-                    fontFamily: "'Orbitron', sans-serif",
+                    fontFamily: "'Poppins', sans-serif",
                     marginBottom: "0.75rem",
                   }}
                 >
@@ -134,7 +134,7 @@ export default function PoliticaPrivacidade() {
         {/* Última atualização */}
         <div style={{ textAlign: "center", marginTop: "3rem" }}>
           <p style={{ color: "#94A3B8", fontSize: "0.875rem", fontFamily: "'Poppins', sans-serif" }}>
-            Última atualização: Janeiro de 2024
+            Última atualização: 07/07/2025.
           </p>
         </div>
       </main>
