@@ -59,7 +59,6 @@ export default function PoliticaPrivacidade() {
   return (
     <div className="min-h-screen bg-galaxy">
       <Header />
-      <WhatsAppButton />
 
       <main className="pt-24 pb-12">
         <div className="container mx-auto px-4">
