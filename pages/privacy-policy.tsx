@@ -1,6 +1,8 @@
-import { Header } from "../components/Header";
-import { Footer } from "../components/Footer";
-// restante do código...
+import React from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
+import { Database, UserCheck, Share2, Lock, Cookie, Shield, RefreshCw, Mail } from "lucide-react";
 
 export default function PoliticaPrivacidade() {
   const sections = [
@@ -52,7 +54,7 @@ export default function PoliticaPrivacidade() {
       content:
         "Para questões sobre privacidade, entre em contato conosco através do e-mail privacy@galaxyscale.com ou pelo WhatsApp disponível em nosso site.",
     },
-  ]
+  ];
 
   return (
     <div className="min-h-screen bg-galaxy">
@@ -63,7 +65,7 @@ export default function PoliticaPrivacidade() {
         <div className="container mx-auto px-4">
           {/* Hero Section */}
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-6xl font-orbitron font-bold text-galaxy-gradient mb-6">
+            <h1 className="text-4xl md:text-6xl font-orbitron font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-cyan-400 to-blue-400 mb-6">
               Política de Privacidade
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">Sua segurança é nossa prioridade.</p>
@@ -71,31 +73,34 @@ export default function PoliticaPrivacidade() {
 
           {/* Sections */}
           <div className="grid gap-8 max-w-4xl mx-auto">
-            {sections.map((section, index) => (
-              <div key={index} className="card-galaxy rounded-2xl p-8">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 flex items-center justify-center">
-                      <section.icon className="h-6 w-6 text-white" />
+            {sections.map((section, index) => {
+              const Icon = section.icon;
+              return (
+                <div key={index} className="rounded-2xl p-8 bg-galaxy-dark/80 shadow-lg">
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 flex items-center justify-center">
+                        <Icon className="h-6 w-6 text-white" aria-label={section.title} />
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h2 className="text-2xl font-orbitron font-semibold text-white mb-4">{section.title}</h2>
+                      <p className="text-gray-300 leading-relaxed font-poppins">{section.content}</p>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h2 className="text-2xl font-orbitron font-semibold text-white mb-4">{section.title}</h2>
-                    <p className="text-gray-300 leading-relaxed">{section.content}</p>
-                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           {/* Last Updated */}
           <div className="text-center mt-12">
-            <p className="text-gray-400 text-sm">Última atualização: Janeiro de 2024</p>
+            <p className="text-gray-400 text-sm font-poppins">Última atualização: Janeiro de 2024</p>
           </div>
         </div>
       </main>
 
       <Footer />
     </div>
-  )
+  );
 }
