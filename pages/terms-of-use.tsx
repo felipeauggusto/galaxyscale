@@ -7,43 +7,43 @@ export default function TermosUso() {
         "Ao acessar e usar os serviços da GalaxyScale, você concorda em cumprir estes termos. O uso inadequado, tentativas de hack ou violação das regras resultará no banimento imediato da plataforma.",
     },
     {
-      iconName: "ShoppingCart",
+      iconName: "01",
       title: "Compra de Contas",
       content:
         "As contas oferecidas são verificadas e entregues conforme especificado. O prazo de entrega é de até 24 horas. Após a entrega, a responsabilidade pela manutenção da conta é do comprador.",
     },
     {
-      iconName: "Shield",
+      iconName: "02",
       title: "Garantia",
       content:
         "Oferecemos garantia de 30 dias para contas com problemas técnicos comprovados. A garantia não cobre banimentos por uso inadequado, violação de políticas das plataformas ou alterações não autorizadas.",
     },
     {
-      iconName: "AlertTriangle",
+      iconName: "03",
       title: "Restrições",
       content:
         "É proibido revender nossas contas, usar para atividades ilegais, spam ou qualquer prática que viole os termos das plataformas originais. O descumprimento resulta em perda da garantia.",
     },
     {
-      iconName: "Scale",
+      iconName: "04",
       title: "Responsabilidades",
       content:
         "A GalaxyScale não se responsabiliza por perdas decorrentes do uso inadequado das contas. O usuário é responsável por seguir as diretrizes das plataformas e manter as contas em conformidade.",
     },
     {
-      iconName: "Copyright",
+      iconName: "05",
       title: "Propriedade Intelectual",
       content:
         "Todo conteúdo do site, incluindo textos, imagens, logos e design são propriedade da GalaxyScale. É proibida a reprodução sem autorização expressa.",
     },
     {
-      iconName: "RefreshCw",
+      iconName: "06",
       title: "Atualizações dos Termos",
       content:
         "Estes termos podem ser atualizados a qualquer momento. Continuando a usar nossos serviços após as mudanças, você aceita automaticamente os novos termos.",
     },
     {
-      iconName: "Mail",
+      iconName: "07",
       title: "Contato",
       content:
         "Para dúvidas sobre estes termos, entre em contato através do e-mail legal@galaxyscale.com ou pelo WhatsApp disponível em nosso site.",
