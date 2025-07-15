@@ -134,7 +134,7 @@ const Community: React.FC = () => {
                 Ver Contas Disponíveis
               </a>
               <a
-                href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre a Comunidade Elite da GalaxyScale"
+                href="https://wa.me/5544999629411?text=Olá! Gostaria de saber mais sobre a Comunidade Elite da GalaxyScale"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-transparent border-2 border-galaxy-cyan text-galaxy-cyan px-8 py-4 rounded-full font-poppins text-lg font-medium hover:bg-galaxy-cyan hover:text-galaxy-dark transition-all duration-300 hover-lift"

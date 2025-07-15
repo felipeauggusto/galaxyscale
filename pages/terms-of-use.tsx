@@ -46,7 +46,7 @@ export default function TermosUso() {
       iconName: "08",
       title: "Contato",
       content:
-        "Para dúvidas sobre estes termos, entre em contato através do e-mail legal@galaxyscale.com ou pelo WhatsApp disponível em nosso site.",
+        "Para dúvidas sobre estes termos, entre em contato através do e-mail suporte@galaxyscale.com.br ou pelo WhatsApp disponível em nosso site.",
     },
   ];
 

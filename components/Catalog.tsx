@@ -325,7 +325,7 @@ const Catalog: React.FC = () => {
               {/* ALTERAÇÃO 5: O link do WhatsApp agora junta os tipos com vírgula para não quebrar. */}
               <div className="flex gap-2">
                 <a
-                  href={`https://wa.me/5544999999999?text=Olá! Gostaria de fazer o pedido da conta ${account.type} - ${account.country} (${account.accountType.join(', ')})`}
+                  href={`https://wa.me/5544999629411?text=Olá! Gostaria de fazer o pedido da conta ${account.type} - ${account.country} (${account.accountType.join(', ')})`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`flex-1 text-center py-3 rounded-lg font-poppins text-sm font-medium transition-all duration-300 flex items-center justify-center space-x-2 ${

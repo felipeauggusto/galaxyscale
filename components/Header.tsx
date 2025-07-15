@@ -89,13 +89,13 @@ const Header: React.FC = () => {
               
               {/* Instagram Link */}
               <a
-                href="https://instagram.com/galaxyscale"
+                href="https://instagram.com/galaxyscale.ads"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-galaxy-light hover:text-galaxy-cyan transition-colors duration-300 font-poppins text-base font-medium py-2"
               >
                 <Instagram size={20} />
-                <span>@galaxyscale</span>
+                <span>@galaxyscale.ads</span>
               </a>
               
               {/* CTA Button Mobile */}

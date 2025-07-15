@@ -64,13 +64,13 @@ const Footer: React.FC = () => {
               </h4>
               <div className="flex justify-center md:justify-end items-center space-x-4 mb-4">
                 <a
-                  href="https://instagram.com/galaxyscale"
+                  href="https://instagram.com/galaxyscale.ads"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 text-galaxy-light hover:text-galaxy-cyan transition-colors duration-300 font-poppins text-sm hover-lift"
                 >
                   <Instagram size={20} />
-                  <span>@galaxyscale</span>
+                  <span>@galaxyscale.ads</span>
                 </a>
               </div>
               <p className="text-galaxy-light/60 font-poppins text-xs">
@@ -99,7 +99,7 @@ const Footer: React.FC = () => {
 
       {/* Botão WhatsApp Flutuante */}
       <a
-        href="https://wa.me/5544999999999?text=Olá!%20Tenho%20interesse%20em%20comprar%20uma%20conta%20Google%20Ads%20da%20GalaxyScale."
+        href="https://wa.me/5544999629411?text=Olá!%20Tenho%20interesse%20em%20comprar%20uma%20conta%20Google%20Ads%20da%20GalaxyScale."
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"

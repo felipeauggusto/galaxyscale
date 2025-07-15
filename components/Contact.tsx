@@ -66,7 +66,7 @@ const Contact: React.FC = () => {
             
             <div className="space-y-6">
               <a
-                href="https://wa.me/5544999999999?text=Olá!%20Tenho%20interesse%20em%20comprar%20uma%20conta%20Google%20Ads%20da%20GalaxyScale."
+                href="https://wa.me/5544999629411?text=Olá!%20Tenho%20interesse%20em%20comprar%20uma%20conta%20Google%20Ads%20da%20GalaxyScale."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-4 p-6 bg-galaxy-dark/50 rounded-lg border border-galaxy-purple/20 hover:border-galaxy-purple transition-colors hover-lift"
@@ -156,7 +156,7 @@ const Contact: React.FC = () => {
               <p className="text-galaxy-light/80 font-poppins text-sm text-center">
                 Não encontrou sua resposta? 
                 <a 
-                  href="https://wa.me/5544999999999?text=Olá!%20Tenho%20uma%20dúvida%20sobre%20as%20contas%20Google%20Ads%20da%20GalaxyScale."
+                  href="https://wa.me/5544999629411?text=Olá!%20Tenho%20uma%20dúvida%20sobre%20as%20contas%20Google%20Ads%20da%20GalaxyScale."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-galaxy-cyan hover:text-galaxy-purple transition-colors ml-1 font-medium"
