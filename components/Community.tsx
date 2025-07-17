@@ -40,7 +40,7 @@ const Community: React.FC = () => {
 
   const stats = [
     { number: '200+', label: 'Membros Ativos' },
-    { number: '10M+', label: 'Investidos pelos Membros' },
+    { number: '30M+', label: 'Investidos pelos Membros' },
     { number: '95%', label: 'Taxa de Sucesso' },
     { number: '24/7', label: 'Suporte Disponível' }
   ];
