@@ -32,7 +32,7 @@ const Catalog: React.FC = () => {
       features: [
         'Login + Senha + Cookies + Proxy',
         'Dupla verificação no Anunciante',
-        'Histórico Limpo'
+        'Histórico Limpo',
         'Gmail BR com mais de 15 anos de uso',
         'IP Dedicado',
         'Verificação Completa',
@@ -73,7 +73,7 @@ const Catalog: React.FC = () => {
       features: [
         'Login + Senha + Cookies + Proxy',
         'Dupla verificação no Anunciante',
-        'Histórico Limpo'
+        'Histórico Limpo',
         'Gmail BR com mais de 15 anos de uso',
         'IP Dedicado',
         'Verificação Completa',
@@ -93,7 +93,7 @@ const Catalog: React.FC = () => {
       features: [
         'Login + Senha + Cookies + Proxy',
         'Dupla verificação no Anunciante',
-        'Histórico Limpo'
+        'Histórico Limpo',
         'Gmail BR com mais de 10 anos de uso',
         'IP Dedicado',
         'Verificação Completa',
@@ -112,7 +112,7 @@ const Catalog: React.FC = () => {
       features: [
         'Login + Senha + Cookies + Proxy',
         'Dupla verificação no Anunciante',
-        'Histórico Limpo'
+        'Histórico Limpo',
         'Gmail BR com mais de 5 anos de uso',
         'IP Dedicado',
         'Verificação Completa',
