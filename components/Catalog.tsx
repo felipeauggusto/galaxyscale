@@ -25,13 +25,22 @@ const Catalog: React.FC = () => {
   const accounts: Account[] = [
     {
       id: '1',
-      type: 'Premium USA',
-      country: 'Estados Unidos',
+      type: 'Start PRO BR',
+      country: 'Brasil',
       status: 'Disponível',
       price: 299,
-      features: ['IP Dedicado', 'Verificação Completa', 'Histórico Limpo'],
-      flag: '🇺🇸',
-      accountType: ['Verificada'] // <--- MUDANÇA AQUI
+      features: [
+        'Login + Senha + Cookies + Proxy',
+        'Dupla verificação no Anunciante',
+        'Histórico Limpo'
+        'Gmail BR com mais de 15 anos de uso',
+        'IP Dedicado',
+        'Verificação Completa',
+        'Documentação',
+        'Suporte 24/7'
+      ],
+      flag: '🇧🇷',
+      accountType: ['Verificada', 'Aquecida'] // <--- MUDANÇA AQUI
     },
     {
       id: '2',
@@ -40,10 +49,11 @@ const Catalog: React.FC = () => {
       status: 'Disponível',
       price: 1999,
       features: [
-        'Login + Senha + Cookies + 2FA',
+        'Login + Senha + Cookies + Proxy',
         'Dupla verificação no Anunciante',
         'G2 Financeiro verificado',
         'Operações Comerciais verificadas',
+        'Gmail BR com mais de 15 anos de uso',
         'IP Dedicado',
         'Verificação Completa',
         'Documentação',
@@ -56,64 +66,62 @@ const Catalog: React.FC = () => {
     },
     {
       id: '3',
-      type: 'Premium UK',
-      country: 'Reino Unido',
-      status: 'Reservada',
-      price: 349,
-      features: ['IP Dedicado', 'Verificação Completa', 'Suporte 24/7'],
-      flag: '🇬🇧',
-      accountType: ['Com Gastos'] // <--- MUDANÇA AQUI
+      type: 'Standard BR',
+      country: 'Brasil',
+      status: 'Disponível',
+      price: 399,
+      features: [
+        'Login + Senha + Cookies + Proxy',
+        'Dupla verificação no Anunciante',
+        'Histórico Limpo'
+        'Gmail BR com mais de 15 anos de uso',
+        'IP Dedicado',
+        'Verificação Completa',
+        'Campanha ativa e aquecida',
+        'Documentação',
+        'Suporte 24/7'
+      ],
+      flag: '🇧🇷',
+      accountType: ['Verificada', 'Aquecida', 'Com Gastos']
     },
     {
       id: '4',
-      type: 'Premium CA',
-      country: 'Canadá',
+      type: 'Start BR',
+      country: 'Brasil',
       status: 'Disponível',
-      price: 279,
-      features: ['IP Dedicado', 'Verificação Completa', 'Histórico Limpo'],
-      flag: '🇨🇦',
-      accountType: ['Verificada'] // <--- MUDANÇA AQUI
+      price: 199,
+      features: [
+        'Login + Senha + Cookies + Proxy',
+        'Dupla verificação no Anunciante',
+        'Histórico Limpo'
+        'Gmail BR com mais de 10 anos de uso',
+        'IP Dedicado',
+        'Verificação Completa',
+        'Documentação',
+        'Suporte 24/7'
+      ],
+      flag: '🇧🇷',
+      accountType: ['Verificada', 'Aquecida'] // <--- MUDANÇA AQUI
     },
     {
       id: '5',
-      type: 'Premium DE',
-      country: 'Alemanha',
+      type: 'Start BR',
+      country: 'Brasil',
       status: 'Disponível',
-      price: 329,
-      features: ['IP Dedicado', 'Verificação Completa', 'Documentação'],
-      flag: '🇩🇪',
-      accountType: ['Aquecida'] // <--- MUDANÇA AQUI
+      price: 99,
+      features: [
+        'Login + Senha + Cookies + Proxy',
+        'Dupla verificação no Anunciante',
+        'Histórico Limpo'
+        'Gmail BR com mais de 5 anos de uso',
+        'IP Dedicado',
+        'Verificação Completa',
+        'Documentação',
+        'Suporte 24/7'
+      ],
+      flag: '🇧🇷',
+      accountType: ['Verificada'] // <--- MUDANÇA AQUI
     },
-    {
-      id: '6',
-      type: 'Premium AU',
-      country: 'Austrália',
-      status: 'Vendida',
-      price: 369,
-      features: ['IP Dedicado', 'Verificação Completa', 'Suporte 24/7'],
-      flag: '🇦🇺',
-      accountType: ['Com Gastos'] // <--- MUDANÇA AQUI
-    },
-    {
-      id: '7',
-      type: 'Premium FR',
-      country: 'França',
-      status: 'Disponível',
-      price: 319,
-      features: ['IP Dedicado', 'Verificação Completa', 'Histórico Premium'],
-      flag: '🇫🇷',
-      accountType: ['Com Gastos'] // <--- MUDANÇA AQUI
-    },
-    {
-      id: '8',
-      type: 'Premium IT',
-      country: 'Itália',
-      status: 'Disponível',
-      price: 289,
-      features: ['IP Dedicado', 'Verificação Completa', 'Aquecimento 30 dias'],
-      flag: '🇮🇹',
-      accountType: ['Aquecida'] // <--- MUDANÇA AQUI
-    }
   ];
 
   const countries = ['Todos', ...Array.from(new Set(accounts.map(acc => acc.country)))];
